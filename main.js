@@ -1,10 +1,11 @@
+
 song = "";
 objects = [];
 status = "";
 
 function preload()
 {
-	song = loadSound("");
+	song = loadSound("alarm_r.mp3");
 }
 
 function setup() {
@@ -33,7 +34,7 @@ function gotResult(error, results) {
 
 function draw() {
   image(video, 0, 0, 380, 380);
-      if(status != "alarm_r.mp3")
+      if(status != "")
       {
         r =  random(255);
         g =  random(255);
